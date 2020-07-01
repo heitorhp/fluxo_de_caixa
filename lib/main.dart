@@ -188,7 +188,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, //tira o banner do debug
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Fluxo de Caixa iuiuiuiuiuiuiuiuiu"),
+          title: Text("Fluxo de Caixa iuiuiuiuiuiuiuiuiu teste novamnete"),
         ),
         body: Column(
           children: <Widget>[
