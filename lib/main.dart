@@ -189,6 +189,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Fluxo de Caixa"), //testando
+
         ),
         body: Column(
           children: <Widget>[
