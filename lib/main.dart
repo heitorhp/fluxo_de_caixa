@@ -187,6 +187,34 @@ class MyApp extends StatelessWidget {
       title: "Fluxo de Caixa Simplificado",
       debugShowCheckedModeBanner: false, //tira o banner do debug
       home: Scaffold(
+        //Menu deslisante
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+              children: <Widget>[
+                DrawerHeader(
+                  child: Text('Menu Geral'),
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                ),
+                ListTile(
+                  title: Text('Fluxo de Caixa'),
+                  onTap: (){
+                    Navigator.pop(context);
+                  },
+                ),
+                ListTile(
+                  title: Text('Relatórios'),
+                  onTap: (){
+                    Navigator.pop(context);
+                  },
+                ),
+              ],
+          ),
+        ),
+        //fim do menu deslizante
+
         appBar: AppBar(
           title: Text("Fluxo de Caixa"),
         ),
